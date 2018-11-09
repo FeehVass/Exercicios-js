@@ -54,3 +54,5 @@ const alunos = [
     },
 ];
 const media = 6;
+
+for(const aluno of alunos){}

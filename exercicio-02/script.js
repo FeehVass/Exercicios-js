@@ -17,3 +17,20 @@ Crie um programa que exiba o resultado da tabuada de um número digitado pelo us
 
 - Bônus: Garantir que o usuário digite números nos inputs, repetindo a pergunta caso ele digite qualquer outra coisa que não números;
  */
+
+ let valor1= Number(prompt('Digite o valor a ser multiplicado.'));
+
+ if(confirm('Você gostaria de multiplicar por um número específico?')){
+    let valor2= Number(prompt('Digite o segundo valor da multiplicação.'));
+    alert(`O resultado foi ${Number(valor1) * Number(valor2)}`);
+ }
+ else{
+    let i=0;
+    let textoDoAlert='';
+
+    while (i<=10){
+        textoDoAlert += `${valor1} * ${i} = ${Number(valor1) * Number (i)}`;
+        i++;
+    }
+    alert(textoDoAlert);
+ }
